@@ -1,5 +1,10 @@
 import pandas as pd
+import numpy as np
+
+from sklearn.metrics import accuracy_score, mean_squared_error
+
 from explainer_comparison.ExplainerFactory import ExplainerFactory
+
 
 def run_and_collect_explanations(factory: ExplainerFactory, X_data, explainers=None) -> pd.DataFrame:
     results = []
